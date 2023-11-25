@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="form_area">
+                <p class="sub-title">Welcome back! 👋</p>
+                <h3 class="title">Sign up to your account</h3>
+                <form id="signupForm" action="./profile.html">
+                    <div class="form_group">
+                        <label class="sub_title" for="name">Name</label>
+                        <input placeholder="Enter your full name" id="name" class="form_style" type="text">
+                    </div>
+
+                    <div class="form_group">
+                        <label class="sub_title" for="email">Email</label>
+                        <input placeholder="Enter your email" id="email" class="form_style" type="email">
+                    </div>
+
+                    <div class="form_group">
+                        <label class="sub_title" for="password">Password</label>
+                        <input placeholder="Enter your password" id="password" class="form_style" type="password">
+                    </div>
+
+                    <div class="form_group">
+                        <label class="sub_title" for="confirmPassword">Confirm Password</label>
+                        <input placeholder="Enter your password" id="confirmPassword" class="form_style" type="password">
+                    </div>
+
+                    <div>
+                        <button class="btn" onclick="submitForm()">CONTINUE</button>
+                    </div>
+
+                    <span id="genericError" class="err" style="display: none;">Error: All fields are mandatory!</span>
+                </form>
+            </div>
+            <p class="sign-up_link">Don’t have an account? <a href="#">Sign up</a></p>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+
+</html>
