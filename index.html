@@ -10,6 +10,9 @@
 
 <body>
     <main>
+        <div class="design">
+            <div class="line"></div>
+        </div>
         <div class="container">
             <div class="form_area">
                 <p class="sub-title">Welcome back! 👋</p>
@@ -36,10 +39,10 @@
                     </div>
 
                     <div>
-                        <button class="btn" onclick="submitForm()">CONTINUE</button>
+                        <button class="btn" id="submitBtn">CONTINUE</button>
                     </div>
 
-                    <span id="genericError" class="err" style="display: none;">Error: All fields are mandatory!</span>
+                    <span id="genericError" class="err" style="display: none; margin-top: 15px;">Error: All fields are mandatory!</span>
                 </form>
             </div>
             <p class="sign-up_link">Don’t have an account? <a href="#">Sign up</a></p>

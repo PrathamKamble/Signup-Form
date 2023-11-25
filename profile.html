@@ -10,6 +10,9 @@
 
 <body>
     <main>
+        <div class="profile-design">
+            <div class="profile-line"></div>
+        </div>
         <div class="container">
             <h3 class="profile-title">Signup Successful!</h3>
             <div class="profile_area">
@@ -19,19 +22,18 @@
                     <img src="./user.png" alt="user-icon" width="80">
                 </div>
                 
-                <p>Name : <span id="profileName"></span></p>
+                <div class="details">
+                    <!-- <p id="fullName">Full Name : ${}</p>
+                    <p id="email">Email : ${}</p>
+                    <p id="token">Token : ${}</p>
+                    <p id="pass">Password : ${}</p> -->
+                </div>
 
-                <p>Email : <span id="profileEmail"></span></p>
-
-                <p>Token : <span id="profileToken"></span></p>
-
-                <p>Password : <span id="profilePassword"></span></p>
-
-                <button class="btn" onclick="logout()">Logout</button>
+                <button class="logout-button btn">Logout</button>
             </div>
         </div>
     </main>
-    <script src="./script.js"></script>
+    <!-- <script src="./profile.js"></script> -->
 </body>
 
 </html>

@@ -19,11 +19,29 @@ main {
     background: #F8FAFC;
 }
 
+.design{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.line{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    height: 150%;
+    width: 100%;
+    transform: skewY(20deg);
+    border-top: 8px solid #5BF7DB;
+}
+
 .container {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    z-index: 1;
 }
 
 .form_area,
@@ -128,3 +146,30 @@ main {
     color: #333;
     font-size: 18px;
 }
+
+.profile-design{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.profile-line{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    height: 150%;
+    width: 100%;
+    background-color: #5BF7DB;
+    transform: skewY(20deg);
+}
+
+/* // `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 510.98px) { 
+    .form_area, .profile_area{
+        width: 80vw;
+    }
+
+    .title {
+        font-size: 5vw;
+    }
+ }
